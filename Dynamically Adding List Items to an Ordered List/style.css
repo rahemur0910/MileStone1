@@ -1,0 +1,51 @@
+.removeItemButton {
+  display: none;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+#list {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 2px solid #0074d9;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  color: #555;
+  font-style: italic;
+  margin: 10px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixed</title>
+</head>
+
+<body>
+    <script>
+        function mixColors(color1, color2) {
+            switch (color1) {
+                case "red":
+                    switch (color2) {
+                        case "blue":
+                            return "purple";
+                        case "yellow":
+                            return "orange";
+                    }
+                    break;
+                case "blue":
+                    switch (color2) {
+                        case "red":
+                            return "purple";
+                        case "yellow":
+                            return "green";
+                    }
+                    break;
+                case "yellow":
+                    switch (color2) {
+                        case "red":
+                            return "orange";
+                        case "blue":
+                            return "green";
+                    }
+            }
+            return "Invalid color combination";
+        }
+
+        const color1 = prompt("Enter the first color:").toLowerCase();
+        const color2 = prompt("Enter the second color:").toLowerCase();
+        const result = mixColors(color1, color2);
+        alert(`Resulting color: ${result}`);
+    </script>
+</body>
+
+</html>

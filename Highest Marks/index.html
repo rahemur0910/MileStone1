@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Highest Marks</title>
+</head>
+
+<body>
+    <script>
+        const marks = [];
+        for (let i = 0; i < 5; i++) {
+            const mark = parseFloat(prompt(`Enter the mark for student ${i + 1}:`));
+            marks.push(mark);
+        }
+        let highestMarks = marks[0];
+
+
+        marks.forEach(mark => {
+            highestMarks = mark > highestMarks ? mark : highestMarks;
+        });
+
+        alert(`The highest marks scored by a student in the class: ${highestMarks}`);
+    </script>
+</body>
+
+</html>

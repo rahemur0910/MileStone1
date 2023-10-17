@@ -1,0 +1,92 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 0.5) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.calculator {
+  background: rgba(255, 255, 255, 0.4);
+  width: 425px;
+  height: 550px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.calculator .result {
+  background-color: white;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.3);
+  border-radius: 20px 20px 20px 20px;
+  height: 75px;
+  margin: 30px;
+}
+
+.calculator .row {
+  margin-bottom: 5px;
+}
+
+.calculator .result p {
+  text-align: right;
+  padding: 20px 10px;
+}
+
+.buttons {
+  margin: 20px;
+}
+
+.btn {
+  width: 75px;
+  height: 75px;
+  border-radius: 35%;
+  border-width: 0px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.2);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.largebtn {
+  width: 44%;
+  height: 75px;
+  border-width: 0px;
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.2);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.largebtn:hover {
+  transform: scale(1.1);
+}
+
+.row .btn:last-child {
+  background: linear-gradient(
+    90deg,
+    rgba(203, 152, 237, 1) 0%,
+    rgba(252, 69, 69, 1) 100%
+  );
+  border-width: 0px;
+}
+
+.row .btn:last-child p {
+  color: white;
+}
